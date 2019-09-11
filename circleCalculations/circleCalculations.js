@@ -17,6 +17,6 @@
 function circleCalculation(radius) {
 	var area = Math.PI * Math.pow(radius, 2);
 	var perimeter = 2 * Math.PI * radius;
-	return "The area of the circle is" + area + "and the perimeter of the circle is " + perimeter +"."
+	return "The area of the circle is " + area + " and the perimeter of the circle is " + perimeter +"."
 }
 circleCalculation(10);
