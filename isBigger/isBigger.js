@@ -37,9 +37,31 @@ console.log(result) // -1
 
 **/
 
+//Inputs: 2 numbers (hopefully)
+//Output: either a boolean, 0, or -1 depending on the calculations
+//Step 1: We need to test if a is greater than b, conditional statement.
+//Step 2: Need to create a return statement if a is greater than b, returms true
+//Step 3: Need to make a condition if a is less than b, Else if block that returns false
+//Step 4: Test if the two numbers are equal. else block that would return 0
+//Step 5: Create a condition that tests to see if a and b are both numbers. If they are proceed with steps 1-4. If not, return -1. Conditional Statement that wraps around our conditional statements in steps 1 - 4. And we will need a logical operator; && and typeof to check if the inputs are actually numbers.
+
+// if a && b are #'s
+// a>b greater than
+// a>b less than
+// a === b
+// else return  -1
 
 
 function isBigger(a, b) {
-	//Your code here
-	
+	if (typeof a === "number" && typeof b === "number"){
+		if (a > b){
+			return true;
+		} else if (a<b){
+			return false;
+		} else {
+			return 0;
+		}
+	}else {
+		return -1
+	}
 }
