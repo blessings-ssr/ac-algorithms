@@ -10,10 +10,34 @@
 
 //The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
-function pairElement(str) {
-  //your code here
-}
+//Input: is a String
+//Output: is a nested array
+//Create a variable that stores the transformation of the input string into an array
+//Create a conditiona statement that checks to see if the current letter we are on in the loop is equal to one of the 4 letters, 4 conditions to test each of the letters
+//If true, push an array with the two strings into our variable storing the array.
+//Be advised :
+//The letter you are given goes first, then the paired letter goes second
+//Split and push is needed
+//We will make two variables
+//We need an input, one is a variable
+//We need an output, one is a variable
 
+function pairElement(str) {
+  var output = [];
+  var array = str.split("");
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === "G"){
+      output.push(["G","C"]);
+    } else if (array[i] === "C"){
+      output.push(["C","G"]);
+    } else if (array[i] === "T"){
+      output.push(["T","A"]);
+    } else {
+    output.push(["A","T"]);
+    }
+  }
+  return output;  
+}
 pairElement("GCG");
 
 //TEST CASES
